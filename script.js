@@ -5,11 +5,11 @@ document.addEventListener("click", function() {
 
   const textElement = document.getElementById('text');
         const words = textElement.innerText.split(' ');
-        textElement.innerHTML = ''; // Clear the text content
+        textElement.innerHTML = ''; 
 
         words.forEach(word => {
             const span = document.createElement('span');
-            span.textContent = word + '\xa0'; // Add a non-breaking space to keep the words separated
+            span.textContent = word + '\xa0'; 
             span.className = 'word';
             textElement.appendChild(span);
         });
